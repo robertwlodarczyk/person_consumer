@@ -7,6 +7,8 @@ import java.util.List;
 public interface PersonRestDao {
 
     List<Person> getAll();
+    List<Person> getByDate(String from,String to);
+
 
     Person getById(int personId);
 
@@ -15,5 +17,7 @@ public interface PersonRestDao {
     Person modify(int personId, Person person);
 
     Person remove(int personId);
+
+
 
 }
